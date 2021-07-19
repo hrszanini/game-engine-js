@@ -6,6 +6,9 @@
   "scripts": {
     "test": "node test.js"
   },
+  "dependencies": {
+    "uuid": "^8.3.2"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hrszanini/GameEngineJS.git"

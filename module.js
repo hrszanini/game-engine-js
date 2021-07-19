@@ -8,6 +8,6 @@ const imports = [
 for(let modulePos in imports){
     for(let importPos in imports[modulePos]){
         const importCollection = imports[modulePos];
-        module.exports[importCollection[importPos]] = importCollection[importPos];
+        module.exports[importPos] = importCollection[importPos];
     }
 }

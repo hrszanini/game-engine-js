@@ -1,8 +1,10 @@
 const imports = [
-    require("./modules/game"),
+    require("./modules/collider"),
     require("./modules/component"),
+    require("./modules/game"),
     require("./modules/gameObject"),
-    require("./modules/collider")
+    require("./modules/physics"),
+    require("./modules/room")
 ];
 
 for(let modulePos in imports){

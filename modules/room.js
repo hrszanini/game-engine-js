@@ -1,6 +1,4 @@
 const { v4: uuidv4 } = require("uuid");
-
-const { BoxCollider } = require("./collider");
 const { Vector } = require("./component");
 
 class Room {
@@ -23,6 +21,8 @@ class Room {
                 id = uuidv4();
             
             this.gameObjects[id] = gameObject;
+
+            return id;
         };
 
         this.collisionsProcess = (gameObject) => {
@@ -44,8 +44,6 @@ class Room {
         };
 
         this.loop = () => {
-            let listToDestroy = [];
-            
             for(let pos in this.gameObjects){
                 const gameObject = this.gameObjects[pos]
 

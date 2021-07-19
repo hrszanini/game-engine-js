@@ -1,0 +1,19 @@
+{
+  "name": "gameenginejs",
+  "version": "1.0.0",
+  "description": "Game Engine to build in servers",
+  "main": "game.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hrszanini/GameEngineJS.git"
+  },
+  "author": "Hamilton Zanini",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hrszanini/GameEngineJS/issues"
+  },
+  "homepage": "https://github.com/hrszanini/GameEngineJS#readme"
+}

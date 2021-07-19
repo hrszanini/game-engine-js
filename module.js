@@ -1,15 +1,14 @@
-const imports = [
-    require("./modules/collider"),
-    require("./modules/component"),
-    require("./modules/game"),
-    require("./modules/gameObject"),
-    require("./modules/physics"),
-    require("./modules/room")
-];
+const collider = require("./modules/collider");
+const component = require("./modules/component");
+const game = require("./modules/game");
+const gameObject = require("./modules/gameObject");
+const physics = require("./modules/physics");
+const room = require("./modules/room");
 
-for(let modulePos in imports){
-    for(let importPos in imports[modulePos]){
-        const importCollection = imports[modulePos];
-        module.exports[importPos] = importCollection[importPos];
-    }
-}
+module.exports.BoxCollider = collider.BoxCollider;
+module.exports.CircleCollider = collider.CircleCollider;
+module.exports.Vector = component.Vector;
+module.exports.Game = game.Game;
+module.exports.GameObject = gameObject.GameObject;
+module.exports.Physics = physics.Physics;
+module.exports.Room = room.Room;

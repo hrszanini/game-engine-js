@@ -7,17 +7,21 @@ class GameObject {
         this.tag = null;
         this.toDestroy = false;
         this.properties = {};
+
         this.position = new Vector();
         this.size = new Vector();
-
         this.collider = new BoxCollider();
         this.physics = new Physics();
         
         this.onCollision = undefined;
 
-        this.onStart = () => {};
+        this.setProperty = (key, value) => {
+            this.properties[key] = value;
+        };
 
-        this.onUpdate = () => {};
+        this.getProperty = (key) => {
+            return this.properties[key];
+        };
 
         this.move = (vector, min, max) => {
             let intendedX = this.position.x + vector.x;
@@ -40,6 +44,10 @@ class GameObject {
         this.destroy = () => {
             this.toDestroy = true;
         };
+
+        this.onStart = () => {};
+
+        this.onUpdate = () => {};
     }
 }
 

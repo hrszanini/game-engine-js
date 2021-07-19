@@ -2,7 +2,7 @@
   "name": "gameenginejs",
   "version": "1.0.0",
   "description": "Game Engine to build in servers",
-  "main": "game.js",
+  "main": "module.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

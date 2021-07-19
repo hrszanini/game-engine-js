@@ -5,5 +5,9 @@ const imports = [
     require("./collider")
 ];
 
-for(let pos in imports)
-    module.exports[imports[pos]] = imports[pos];
+for(let modulePos in imports){
+    for(let importPos in imports[modulePos]){
+        const importCollection = imports[modulePos];
+        module.exports[importCollection[importPos]] = importCollection[importPos];
+    }
+}
